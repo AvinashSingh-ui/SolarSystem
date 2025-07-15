@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>3D Solar System Simulation</h1>
+        <div class="controls-container">
+            <button id="pauseBtn" class="control-btn">
+                <span class="icon">⏸</span> Pause
+            </button>
+            <button id="themeBtn" class="control-btn">
+                <span class="icon">🌙</span> Light Mode
+            </button>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div id="solarSystem"></div>
+        <div class="info-panel">
+            <div class="panel-header">
+                <div class="panel-title">Planet Speed Controls</div>
+            </div>
+            <div class="speed-controls" id="speedControls">
+                <!-- Planet controls will be generated here -->
+            </div>
+        </div>
+        <div class="toggle-panel" id="togglePanel">
+            <span class="icon">◀</span>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <p><span class="icon">🖱</span> Click and drag to rotate camera</p>
+        <p><span class="icon">🖱</span> Scroll to zoom in/out</p>
+        <p><span class="icon">🪐</span> Hover over planets for information</p>
+    </div>
+    
+    <div class="tooltip" id="planetTooltip"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
